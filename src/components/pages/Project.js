@@ -7,4 +7,4 @@ function Project() {
 
 }
 
-export default project
+export default Project;
