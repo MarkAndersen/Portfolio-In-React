@@ -3,6 +3,7 @@ import Picture from "./Picture";
 import NavBar from "./Navbar";
 import Project from "./pages/Project";
 import Home from "./pages/Home";
+import "../styles/wrapper.css";
 import React, { useState } from 'react';
 
 //conditional render from ACT 24. this will be my shell for the the APP
@@ -15,9 +16,6 @@ export default function Wrapper() {
         return <Home />;
       }
       return <Project />;
-      // if (currentPage === 'Project') {
-      // }
-      // return <Contact />;
     };
   
     const handlePageChange = (page) => setCurrentPage(page);
@@ -27,6 +25,9 @@ export default function Wrapper() {
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         <Picture />
         {renderPage()}
+        <br></br>
+        <br></br>
+        <br></br>
         <Footer />
       </div>
     );

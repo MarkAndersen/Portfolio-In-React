@@ -1,16 +1,18 @@
-import React from "react"
+import React from "react";
 import Container from "react-bootstrap/Container";
-import Image  from "react-bootstrap/Image";
-import Img from "./../assets/portfoliopicture.jpg"
+import Row from "react-bootstrap/Row";
+import Image from "react-bootstrap/Image";
+import Img from "./../assets/portfoliopicture.jpg";
+import "../styles/picture.css";
 
-function Headshot() {
-    return (
-    
-        <Container className="justify-content-center" >
-            <Image src={Img} roundedCircle />
-        </Container>
-    )
-};
+function Picture() {
+  return (
+    <Container>
+      <Row className="justify-content-center">
+        <Image src={Img} className="img" rounded fluid />
+      </Row>
+    </Container>
+  );
+}
 
-
-export default Headshot;
+export default Picture;
