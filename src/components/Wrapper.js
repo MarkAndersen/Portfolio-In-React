@@ -23,7 +23,11 @@ export default function Wrapper() {
     return (
       <div>
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
+        <br></br>
+        <br></br>
         <Picture />
+        <br></br>
+        <br></br>
         {renderPage()}
         <br></br>
         <br></br>
