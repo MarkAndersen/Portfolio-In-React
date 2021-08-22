@@ -4,14 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from "react-bootstrap/Container";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-function NavBar() {
+function NavBar({ currentPage, handlePageChange }) {
     return (
         <Navbar bg="dark" variant="dark">
-            <Container>
+            <Container fluid>
                 <Navbar.Brand>Mark Andersen</Navbar.Brand>
                 <Nav className="justify-content-end">
-                    <Nav.Link href='#home'>Home</Nav.Link>
-                    <Nav.Link href='#projects'>Projects</Nav.Link>
+                    <Nav.Link href='#home' onClick={() => handlePageChange('Home')}>Home</Nav.Link>
+                    <Nav.Link href='#projects' onClick={() => handlePageChange('About')}>Projects</Nav.Link>
                     <Nav.Link href='#contact'>Contact Me</Nav.Link>
                 </Nav>
             </Container>

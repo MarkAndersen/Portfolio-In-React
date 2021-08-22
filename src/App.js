@@ -1,16 +1,20 @@
 import React from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import NavBar from './components/Navbar';
+import Container from './components/Container';
+// import Footer from './components/Footer';
+// import Header from './components/Header';
+// import NavBar from './components/Navbar';
+// import Home from './components/pages/Home';
 
-function App() {
-    return <div>
-      <NavBar />
-      <Header />
-      <Footer />;
-    </div>;
+const App = () => <Container />; 
+// {
+//     return <div>
+//       <NavBar />
+//       <Header />
+//       {/* <Home /> */}
+//       <Footer />;
+//     </div>;
 
-  }
-  
+//   }
+
   export default App;
   
