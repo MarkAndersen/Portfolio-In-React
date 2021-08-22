@@ -1,15 +1,16 @@
 import React from "react"
 import Container from "react-bootstrap/Container";
 import Image  from "react-bootstrap/Image";
+import Img from "./../assets/portfoliopicture.jpg"
 
-function Header () {
+function Headshot() {
     return (
     
         <Container className="justify-content-center" >
-            <Image src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.jpg" roundedCircle />
+            <Image src={Img} roundedCircle />
         </Container>
     )
 };
 
 
-export default Header;
+export default Headshot;

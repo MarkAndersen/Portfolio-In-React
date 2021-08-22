@@ -1,11 +1,12 @@
 import React from 'react';
-import Container from './components/Container';
+import Wrapper from './components/Wrapper';
+
 // import Footer from './components/Footer';
 // import Header from './components/Header';
 // import NavBar from './components/Navbar';
 // import Home from './components/pages/Home';
 
-const App = () => <Container />; 
+const App = () => <Wrapper />; 
 // {
 //     return <div>
 //       <NavBar />

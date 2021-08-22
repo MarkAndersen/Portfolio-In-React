@@ -9,9 +9,10 @@ function Footer() {
         <Container fluid>
             <Navbar.Brand>Mark Andersen</Navbar.Brand>
             <Nav className="justify-content-end" id="contact">
-                <Nav.Link href='#home'>Home</Nav.Link>
-                <Nav.Link href='#projects'>Projects</Nav.Link>
-                <Nav.Link href='#contact'>Contact Me</Nav.Link>
+                <Nav.Link href='https://github.com/MarkAndersen'>Github</Nav.Link>
+                <Nav.Link href='https://www.linkedin.com/in/mark-andersen-042380105/'>LinkedIn</Nav.Link>
+                <Nav.Link href='./assets/res/MA-res-2021.pdf'>Resume</Nav.Link>
+                <Nav.Link href='mailto:Mark.Andersen75@gmail.com'>Contact Me</Nav.Link>
             </Nav>
         </Container>
   </Navbar>

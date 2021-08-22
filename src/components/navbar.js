@@ -11,7 +11,7 @@ function NavBar({ currentPage, handlePageChange }) {
                 <Navbar.Brand>Mark Andersen</Navbar.Brand>
                 <Nav className="justify-content-end">
                     <Nav.Link href='#home' onClick={() => handlePageChange('Home')}>Home</Nav.Link>
-                    <Nav.Link href='#projects' onClick={() => handlePageChange('About')}>Projects</Nav.Link>
+                    <Nav.Link href='#projects' onClick={() => handlePageChange('Projects')}>Projects</Nav.Link>
                     <Nav.Link href='#contact'>Contact Me</Nav.Link>
                 </Nav>
             </Container>

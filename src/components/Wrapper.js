@@ -1,12 +1,12 @@
 import Footer from "./Footer";
-import Header from "./Header";
+import Picture from "./Picture";
 import NavBar from "./Navbar";
 import Project from "./pages/Project";
 import Home from "./pages/Home";
 import React, { useState } from 'react';
 
 //conditional render from ACT 24. this will be my shell for the the APP
-export default function Container() {
+export default function Wrapper() {
     const [currentPage, setCurrentPage] = useState('Home');
   
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -24,13 +24,10 @@ export default function Container() {
   
     return (
       <div>
-        {/* We are passing the currentPage from state and the function to update it */}
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-        {/* Here we are calling the renderPage method which will return a component  */}
-        <Header />
+        <Picture />
         {renderPage()}
         <Footer />
-
       </div>
     );
   }
