@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact"
 import "../styles/wrapper.css";
 import React, { useState } from "react";
+import Resume from "./pages/Resume";
 
 //conditional render from ACT 24. this will be my shell for the the APP
 export default function Wrapper() {
@@ -15,9 +16,11 @@ export default function Wrapper() {
     if (currentPage === "Home") {
       return <Home />;
     } else if (currentPage === "Contact") {
-      return <Contact />
-    } else {
+      return <Contact />;
+    } else if (currentPage === "Project") {
     return <Project />;
+    } else {
+      return <Resume />
     }
   };
 

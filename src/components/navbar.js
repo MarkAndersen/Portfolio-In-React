@@ -12,10 +12,11 @@ function NavBar({ currentPage, handlePageChange }) {
           </Nav.Link>
           <Nav.Link
             href="#projects"
-            onClick={() => handlePageChange("Projects")}
+            onClick={() => handlePageChange("Project")}
           >
             Projects
           </Nav.Link>
+          <Nav.Link href="#resume" onClick={() => handlePageChange("Resume")}>Resume</Nav.Link>
           <Nav.Link href="#contact" onClick={() => handlePageChange("Contact")}>
             Contact Me
           </Nav.Link>
