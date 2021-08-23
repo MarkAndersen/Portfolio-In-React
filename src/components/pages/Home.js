@@ -26,7 +26,7 @@ function Home() {
         <Col>
       <div className="justify-content-center" style={styles.div}>
         <h1>About Me:</h1>
-        <h2 style={styles.div}>
+        <p style={styles.div}>
           Hi! My name is Mark Andersen, I am an aspiring web developer currently
           participating in the Full Stack Uconn bootcamp. I have an extensive
           background in retail I currently manage the Services and Fulfillment
@@ -35,7 +35,7 @@ function Home() {
           Meteorology. I am looking to tie in the skills I acquire during this
           program with my educational background studying and forecasting
           weather.
-        </h2>
+        </p>
       </div>
       </Col>
       </Row>
