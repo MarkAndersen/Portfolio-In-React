@@ -1,29 +1,29 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import { Card, CardGroup, Button, Container } from "react-bootstrap";
 import WTImg from "../../assets/wt-chart.png";
 import GRImg from "../../assets/GR.png";
 import TrackImg from "../../assets/Track.png";
 import PWAImg from "../../assets/PWA.png";
-import "../../styles/project.css";
 
-// const styles = {
-//   buttonMargin: {
-//     margin: "10px"
-//   }
-// }
+
+const styles = {
+ header: {
+  backgroundColor:'dimgrey',
+  fontSize: 'larger'
+ },
+ parent: {
+  borderTop: 'darkcyan',
+  borderTopStyle: 'groove'
+ }
+}
 
 function Project() {
   return (
-    <Container className="parent" fluid>
+    <Container style={styles.parent} fluid>
       <CardGroup>
         <Card className="text-center">
           <Card.Img variant="top" src={WTImg} />
-          <Card.Header className="cardHeader">Workout Tracker</Card.Header>
+          <Card.Header style={styles.header}>Workout Tracker</Card.Header>
           <Card.Body>
             <Card.Title>Track Your Progress!</Card.Title>
             <Card.Text>
@@ -50,7 +50,7 @@ function Project() {
         </Card>
         <Card className="text-center">
           <Card.Img variant="top" src={PWAImg} />
-          <Card.Header className="cardHeader">PWA-Budget Tracker</Card.Header>
+          <Card.Header style={styles.header}>PWA-Budget Tracker</Card.Header>
           <Card.Body>
             <Card.Title>Track Your Budget Online and Offline</Card.Title>
             <Card.Text>
@@ -78,7 +78,7 @@ function Project() {
       <CardGroup>
           <Card className="text-center">
             <Card.Img variant="top" src={GRImg} />
-            <Card.Header className="cardHeader">Game Randomizer</Card.Header>
+            <Card.Header style={styles.header}>Game Randomizer</Card.Header>
             <Card.Body>
               <Card.Title>Steam-Roulette</Card.Title>
               <Card.Text>
@@ -105,7 +105,7 @@ function Project() {
           </Card>
           <Card className="text-center">
             <Card.Img variant="top" src={TrackImg} />
-            <Card.Header className="cardHeader">Employee Tracker</Card.Header>
+            <Card.Header style={styles.header}>Employee Tracker</Card.Header>
             <Card.Body>
               <Card.Title>Track and Organize Employees!</Card.Title>
               <Card.Text>
@@ -125,7 +125,7 @@ function Project() {
           </Card>
           <Card className="text-center">
             <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Header className="cardHeader">Final Project</Card.Header>
+            <Card.Header style={styles.header}>Final Project</Card.Header>
             <Card.Body>
               <Card.Title>Tentative Title: Yo, Santa!</Card.Title>
               <Card.Text>

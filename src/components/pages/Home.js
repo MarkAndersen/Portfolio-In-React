@@ -1,11 +1,16 @@
 import React from "react";
-import "../../styles/home.css"
 
+const styles = {
+  div : {
+    borderTop: 'darkcyan',
+    borderTopStyle: 'groove'
+  }
+};
 function Home() {
   return (
-    <div className="justify-content-center home">
+    <div className="justify-content-center" style={styles.div}>
       <h1>About Me:</h1>
-      <h2 className="home">
+      <h2 style={styles.div}>
         Hi! My name is Mark Andersen, I am an aspiring web developer currently
         participating in the Full Stack Uconn bootcamp. I have an extensive
         background in retail I currently manage the Services and Fulfillment
