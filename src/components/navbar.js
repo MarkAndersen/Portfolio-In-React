@@ -3,10 +3,10 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 function NavBar({ currentPage, handlePageChange }) {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar fixed="top" bg="dark" variant="dark">
       <Container fluid>
         <Navbar.Brand>Mark Andersen</Navbar.Brand>
-        <Nav className="justify-content-end">
+        <Nav>
           <Nav.Link href="#home" onClick={() => handlePageChange("Home")}>
             Home
           </Nav.Link>

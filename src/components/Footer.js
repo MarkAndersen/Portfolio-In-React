@@ -3,10 +3,10 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 function Footer() {
   return (
-    <footer>
+    
       <Navbar fixed="bottom" bg="dark" variant="dark">
         <Container fluid>
-          <Navbar.Brand> &copy; Mark Andersen 2021</Navbar.Brand>
+          <Navbar.Brand> &copy; 2021</Navbar.Brand>
           <Nav className="justify-content-center">
             <Nav.Link href="https://github.com/MarkAndersen">Github</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/mark-andersen-042380105/">
@@ -19,7 +19,7 @@ function Footer() {
           </Nav>
         </Container>
       </Navbar>
-    </footer>
+    
   );
 }
 
