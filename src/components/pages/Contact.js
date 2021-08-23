@@ -83,7 +83,6 @@ function Contact() {
         <Button
           variant="outline-light"
           type='submit'
-          style={{ width: "5vw", justifyContent: "end" }}
           onClick={handleFormSubmit}
         >
           Submit

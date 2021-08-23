@@ -11,27 +11,18 @@ const styles = {
     backgroundColor: "dimgrey",
     fontSize: "larger",
   },
-  parent: {
-    borderTop: "darkcyan",
-    borderTopStyle: "groove",
-  },
   picture: {
-    height: "40vh",
-    width: "40vw",
-  },
-  card: {
-    width: "18rem",
+    minHeight: "40vh",
+    width: "100%",
   },
 };
 
 function Project() {
   return (
-    <Container style={styles.parent}>
+    <Container>
       <CardGroup>
-        <Card className="text-center" style={styles.card}>
+        <Card className="text-center">
           <Card.Img
-            as={Image}
-            fluid={true}
             variant="top"
             src={WTImg}
             style={styles.picture}
@@ -62,10 +53,9 @@ function Project() {
             </Button>
           </Card.Body>
         </Card>
-        <Card className="text-center" style={styles.card}>
+        <Card className="text-center">
           <Card.Img
             as={Image}
-            fluid={true}
             variant="top"
             src={PWAImg}
             style={styles.picture}
@@ -98,8 +88,6 @@ function Project() {
         </Card>
         <Card className="text-center">
           <Card.Img
-            as={Image}
-            fluid={true}
             variant="top"
             src="https://media.giphy.com/media/26BRqPg05olzXG1bi/giphy.gif"
             style={styles.picture}
@@ -111,6 +99,8 @@ function Project() {
               Final project will go here! In Collaboration with Pratik Patel,
               Angelica Sargent and James O'Keefe
             </Card.Text>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <br></br>
@@ -131,8 +121,6 @@ function Project() {
       <CardGroup>
         <Card className="text-center">
           <Card.Img
-            as={Image}
-            fluid={true}
             variant="top"
             src={GRImg}
             style={styles.picture}
@@ -164,8 +152,6 @@ function Project() {
         </Card>
         <Card className="text-center">
           <Card.Img
-            as={Image}
-            fluid={true}
             variant="top"
             src={TrackImg}
             style={styles.picture}
@@ -190,8 +176,6 @@ function Project() {
         </Card>
         <Card className="text-center">
           <Card.Img
-            as={Image}
-            fluid={true}
             variant="top"
             src={WDSImg}
             style={styles.picture}

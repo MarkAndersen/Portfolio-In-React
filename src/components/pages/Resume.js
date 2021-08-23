@@ -34,7 +34,6 @@ function Resume() {
           <Button
             variant="outline-light"
             href="https://drive.google.com/file/d/1uspfODwq4PbBRWtda8bnglD97X3zSMeg/view?usp=sharing"
-            // style={{ height: '5vw'}}
             size="lg"
           >
             View/Download <br />
