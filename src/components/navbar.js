@@ -16,7 +16,9 @@ function NavBar({ currentPage, handlePageChange }) {
           >
             Projects
           </Nav.Link>
-          <Nav.Link href="#resume" onClick={() => handlePageChange("Resume")}>Resume</Nav.Link>
+          <Nav.Link href="#resume" onClick={() => handlePageChange("Resume")}>
+            Resume
+          </Nav.Link>
           <Nav.Link href="#contact" onClick={() => handlePageChange("Contact")}>
             Contact Me
           </Nav.Link>
