@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
 import Img from "../../assets/portfoliopicture.jpg";
+
 const styles = {
   div: {
     borderTop: "darkcyan",
@@ -11,6 +12,7 @@ const styles = {
     maxWidth: "40vw",
   },
 };
+
 function Home() {
   return (
     <Container>
@@ -20,7 +22,6 @@ function Home() {
       <br></br>
       <br></br>
       <br></br>
-
       <div className="justify-content-center" style={styles.div}>
         <h1>About Me:</h1>
         <h2 style={styles.div}>

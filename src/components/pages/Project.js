@@ -4,6 +4,7 @@ import WTImg from "../../assets/wt-chart.jpg";
 import GRImg from "../../assets/GR.png";
 import TrackImg from "../../assets/Track.png";
 import PWAImg from "../../assets/PWA.png";
+import WDSImg from "../../assets/wds.png";
 
 const styles = {
   header: {
@@ -46,14 +47,14 @@ function Project() {
               combined in aggregate and totaled to be shown back to the user
             </Card.Text>
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://pacific-dawn-55437.herokuapp.com/"
             >
               Page Link
             </Button>{" "}
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://github.com/MarkAndersen/Workout-Tracker"
             >
@@ -80,16 +81,47 @@ function Project() {
               the server once the user is back online
             </Card.Text>{" "}
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://afternoon-gorge-52033.herokuapp.com/"
             >
               Page Link
             </Button>{" "}
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://github.com/MarkAndersen/PWA-budget-tracker"
+            >
+              Repo Link
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="text-center">
+          <Card.Img
+            as={Image}
+            fluid={true}
+            variant="top"
+            src="https://media.giphy.com/media/26BRqPg05olzXG1bi/giphy.gif"
+            style={styles.picture}
+          />
+          <Card.Header style={styles.header}>Final Project</Card.Header>
+          <Card.Body>
+            <Card.Title>Tentative Title: Yo, Santa!</Card.Title>
+            <Card.Text>
+              Final project will go here! In Collaboration with Pratik Patel,
+              Angelica Sargent and James O'Keefe
+            </Card.Text>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Button variant="outline-light" size="lg">
+              Page Link
+            </Button>{" "}
+            <Button
+              variant="outline-light"
+              size="lg"
+              href="https://github.com/agraysargent/Yo-Santa"
             >
               Repo Link
             </Button>
@@ -113,15 +145,16 @@ function Project() {
               library, in hopes they find one they would like to play. Made in
               collaboration with Angelica Sargent, James O'Keefe, and Scott Core
             </Card.Text>
+            <br></br>
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://agraysargent.github.io/Game-Randomizer/"
             >
               Page Link
             </Button>{" "}
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://github.com/agraysargent/Game-Randomizer"
             >
@@ -145,8 +178,9 @@ function Project() {
               MySQL and applying CRUD concepts to modify a database. The
               database was centered around a small workforce
             </Card.Text>
+            <br></br>
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
               href="https://github.com/MarkAndersen/Employee-tracker/"
             >
@@ -159,25 +193,29 @@ function Project() {
             as={Image}
             fluid={true}
             variant="top"
-            src="https://media.giphy.com/media/26BRqPg05olzXG1bi/giphy.gif"
+            src={WDSImg}
             style={styles.picture}
           />
-          <Card.Header style={styles.header}>Final Project</Card.Header>
+          <Card.Header style={styles.header}>Workday Scheduler</Card.Header>
           <Card.Body>
-            <Card.Title>Tentative Title: Yo, Santa!</Card.Title>
+            <Card.Title>Track and Organize Employees!</Card.Title>
             <Card.Text>
-              Final project will go here! In Collaboration with Pratik Patel,
-              Angelica Sargent and James O'Keefe
+              A simple Front end application using some third party APIs like
+              moment.js and jquery to create a workday scheduler that
+              dynamically updates display depending on the time of day and saves
+              user input in local storage for persistence
             </Card.Text>
-            <br></br>
-            <br></br>
-            <Button variant="secondary" size="lg">
+            <Button
+              variant="outline-light"
+              size="lg"
+              href="https://markandersen.github.io/Workday-Scheduler/"
+            >
               Page Link
             </Button>{" "}
             <Button
-              variant="secondary"
+              variant="outline-light"
               size="lg"
-              href="https://github.com/agraysargent/Yo-Santa"
+              href="https://github.com/MarkAndersen/Workday-Scheduler"
             >
               Repo Link
             </Button>

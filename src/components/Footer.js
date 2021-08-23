@@ -12,7 +12,7 @@ function Footer() {
             <Nav.Link href="https://www.linkedin.com/in/mark-andersen-042380105/">
               LinkedIn
             </Nav.Link>
-            <Nav.Link href="./assets/res/MA-res-2021.pdf">Resume</Nav.Link>
+            <Nav.Link href="https://drive.google.com/file/d/1uspfODwq4PbBRWtda8bnglD97X3zSMeg/view?usp=sharing">Resume</Nav.Link>
             <Nav.Link href="mailto:Mark.Andersen75@gmail.com">
               Contact Me
             </Nav.Link>

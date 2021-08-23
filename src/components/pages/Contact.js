@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-import { TextArea, Form, Row, Container, Button, Col } from "react-bootstrap";
+import { Form, Row, Container, Button, Col } from "react-bootstrap";
 
 function Contact() {
   //assigning state variables, and setting inital states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+ //sets stat as input changes
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
@@ -25,7 +25,7 @@ function Contact() {
   const handleFormSubmit = (e) => {
     //prevents page reload upon submission
     e.preventDefault();
-
+    //checks email vs regex pattern to validate, pulling in helper function
     if (!validateEmail(email) || !name || !message) {
       alert(`Email Invalid and no name or message submitted!`);
       setEmail("");
@@ -42,54 +42,6 @@ function Contact() {
   };
 
   return (
-    //form fields
-    // <Container>
-    //   <h2>If you have a question please fill out the form below!</h2>
-    //     <Row>
-    //       <input
-    //         value={name}
-    //         style={{ width: "30vw", background: "white", color: "black",}}
-    //         name="name"
-    //         onChange={handleInputChange}
-    //         type="text"
-    //         placeholder="name"
-    //       />
-    //     </Row>
-    //     <br></br>
-    //     <Row>
-    //       <input
-    //         value={email}
-    //         style={{ width: "30vw", background: "white", color: "black" }}
-    //         name="email"
-    //         onChange={handleInputChange}
-    //         type="email"
-    //         placeholder="email"
-    //       />
-    //     </Row>
-    //     <br></br>
-    //     <Row>
-    //     <textarea
-    //       value={message}
-    //       style={{
-    //         height: "30vh",
-    //         width: "30vw",
-    //         background: "white",
-    //         color: "black",
-    //       }}
-    //       name="message"
-    //       onChange={handleInputChange}
-    //       type="text"
-    //       placeholder="message"
-    //     />
-    //     </Row>
-    //     <Row>
-    //        <Row>
-    //       <Button variant="outline-light" style={{ width: '5vw' }} onClick={handleFormSubmit}>
-    //         Submit
-    //       </Button>
-    //     </Row>
-    //     </Row>
-    // </Container>
     <Container>
       <Form>
         <Row className="mb-3">
@@ -98,6 +50,7 @@ function Contact() {
             <Form.Control
               type="text"
               name="name"
+              value={name}
               placeholder="Enter Your Name"
               onChange={handleInputChange}
             />
@@ -108,6 +61,7 @@ function Contact() {
             <Form.Control
               type="email"
               name="email"
+              value={email}
               placeholder="Enter Your Email"
               onChange={handleInputChange}
             />
@@ -118,6 +72,7 @@ function Contact() {
           <Form.Control
             as="textarea"
             type="text"
+            value={message}
             style={{ height: "25vh" }}
             name="message"
             placeholder="Enter Your Message"
@@ -127,6 +82,7 @@ function Contact() {
 
         <Button
           variant="outline-light"
+          type='submit'
           style={{ width: "5vw", justifyContent: "end" }}
           onClick={handleFormSubmit}
         >
