@@ -3,9 +3,11 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 function NavBar({ currentPage, handlePageChange }) {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
       <Container fluid>
         <Navbar.Brand>Mark Andersen</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
           <Nav.Link href="#home" onClick={() => handlePageChange("Home")}>
             Home
@@ -23,6 +25,7 @@ function NavBar({ currentPage, handlePageChange }) {
             Contact Me
           </Nav.Link>
         </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
