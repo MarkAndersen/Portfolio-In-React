@@ -5,6 +5,7 @@ import GRImg from "../../assets/GR.png";
 import TrackImg from "../../assets/Track.png";
 import PWAImg from "../../assets/PWA.png";
 import WDSImg from "../../assets/wds.png";
+import YSImg from "../../assets/Yo-Santa.png";
 
 const styles = {
   header: {
@@ -89,23 +90,19 @@ function Project() {
         <Card className="text-center">
           <Card.Img
             variant="top"
-            src="https://media.giphy.com/media/26BRqPg05olzXG1bi/giphy.gif"
+            src={YSImg}
             style={styles.picture}
           />
           <Card.Header style={styles.header}>Final Project</Card.Header>
           <Card.Body>
-            <Card.Title>Tentative Title: Yo, Santa!</Card.Title>
+            <Card.Title>Yo, Santa!</Card.Title>
             <Card.Text>
-              Final project will go here! In Collaboration with Pratik Patel,
+              A single page React App where the user can book event entertainment for the holidays! Users can create an account, login and select from multiple packages per season.
+              In Collaboration with Pratik Patel,
               Angelica Sargent and James O'Keefe
-            </Card.Text>
+            </Card.Text>{" "}
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Button variant="outline-light" size="lg">
+            <Button variant="outline-light" size="lg" href="https://powerful-meadow-82494.herokuapp.com">
               Page Link
             </Button>{" "}
             <Button
