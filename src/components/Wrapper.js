@@ -7,7 +7,6 @@ import "../styles/wrapper.css";
 import React, { useState } from "react";
 import Resume from "./pages/Resume";
 
-//conditional render from ACT 24. this will be my shell for the the APP
 export default function Wrapper() {
   const [currentPage, setCurrentPage] = useState("Home");
 
