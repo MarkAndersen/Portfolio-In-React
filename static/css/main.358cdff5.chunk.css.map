@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles/wrapper.css"],"names":[],"mappings":"AAAA,EACI,+BAAiC,CACjC,gBAAiB,CACjB,wBAA8B,CAC9B,aACJ","file":"main.358cdff5.chunk.css","sourcesContent":["* {\n    font-family: 'Ubuntu', sans-serif;\n    font-size: '16px';\n    background-color:darkslategray;\n    color:#dcded9;  \n}\n\n"]}
