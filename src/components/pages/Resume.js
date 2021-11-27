@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, ListGroup } from "react-bootstrap";
+import resume from "./MA-Res-11-21.pdf"
 const styles = {
   list: {
     background: "transparent",
@@ -33,7 +34,7 @@ function Resume() {
 
           <Button
             variant="outline-light"
-            href="https://drive.google.com/file/d/1uspfODwq4PbBRWtda8bnglD97X3zSMeg/view?usp=sharing"
+            href={resume}
             size="lg"
           >
             View/Download <br />
