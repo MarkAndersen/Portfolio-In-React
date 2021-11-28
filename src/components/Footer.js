@@ -13,7 +13,7 @@ function Footer() {
               LinkedIn
             </Nav.Link>
             <Nav.Link href="https://twitter.com/MAndersen444">Twitter</Nav.Link>
-            <Nav.Link href="mailto:Mark.Andersen75@gmail.com">
+            <Nav.Link href="mailto:Mark.Andersen689@gmail.com">
               Email Me
             </Nav.Link>
           </Nav>
